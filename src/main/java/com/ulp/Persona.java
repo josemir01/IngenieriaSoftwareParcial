@@ -1,13 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.ulp;
 
-/**
- *
- * @author Admin
- */
+
 public class Persona {
-    
+
+    private String dni;
+    private String nombre;
+    private String mail;
+
+    public Persona(String dni, String nombre, String mail) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.mail = mail;
+    }
+
+    public String getDni() {
+        return dni;
+    }
 }
