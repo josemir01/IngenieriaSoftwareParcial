@@ -1,5 +1,10 @@
+package com.ulp;
+
+import com.ulp.Denuncia
+import com.ulp.Luz;
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class Semaforo {
 
