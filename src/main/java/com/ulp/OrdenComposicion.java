@@ -14,9 +14,7 @@ public class OrdenComposicion {
     private EquipoControl equipoControl;
     private boolean finalizada;
 
-    public OrdenComposicion(int nroOrden, LocalDate fechaProgramada,
-                            String detalle, Denuncia denuncia) {
-
+    public OrdenComposicion(int nroOrden, LocalDate fechaProgramada,String detalle, Denuncia denuncia) {
         this.nroOrden = nroOrden;
         this.fechaProgramada = fechaProgramada;
         this.detalle = detalle;
