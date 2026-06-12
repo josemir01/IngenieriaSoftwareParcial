@@ -1,7 +1,7 @@
 package com.ulp;
+
 import com.ulp.Semaforo;
 import com.ulp.OrdenComposicion;
-
 
 public class Denuncia {
 
@@ -13,7 +13,7 @@ public class Denuncia {
 
     private OrdenComposicion ordenAsignada;
 
-    public Denuncia(int codigo, Persona denunciante, Semaforo semaforo,String problema, String prioridad) {
+    public Denuncia(int codigo, Persona denunciante, Semaforo semaforo, String problema, String prioridad) {
 
         if (!esPrioridadValida(prioridad)) {
             throw new IllegalArgumentException("Prioridad inválida");
@@ -32,13 +32,13 @@ public class Denuncia {
             throw new OrdenYaAsignadaException("La denuncia ya tiene una orden asignada");
         }
 
+        this.ordenAsignada = orden;
     }
 
     public static boolean esPrioridadValida(String prioridad) {
-        return prioridad.equalsIgnoreCase("Alta")
-                || prioridad.equalsIgnoreCase("Media")
-                || prioridad.equalsIgnoreCase("Baja");
+        return prioridad.equalsIgnoreCase("Alta") || prioridad.equalsIgnoreCase("Media") || prioridad.equalsIgnoreCase("Baja");
     }
+    
 
     public OrdenComposicion getOrdenAsignada() {
         return ordenAsignada;
@@ -47,4 +47,5 @@ public class Denuncia {
     public Semaforo getSemaforo() {
         return semaforo;
     }
+
 }

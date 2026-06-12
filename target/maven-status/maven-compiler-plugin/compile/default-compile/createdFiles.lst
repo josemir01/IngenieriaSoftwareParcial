@@ -1,2 +1,9 @@
-com\ulp\Bateria.class
-com\ulp\PlantillaTp5Junit.class
+com\ulp\GestionSemaforos.class
+com\ulp\Luz.class
+com\ulp\EquipoControl.class
+com\ulp\Semaforo.class
+com\ulp\Miembro.class
+com\ulp\OrdenComposicion.class
+com\ulp\Denuncia.class
+com\ulp\OrdenYaAsignadaException.class
+com\ulp\Persona.class

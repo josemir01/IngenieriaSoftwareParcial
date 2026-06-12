@@ -11,7 +11,13 @@ public class EquipoControl {
 
     private int codigo;
     private List<Miembro> miembros;
-
+    private String estado = "Ocupado";
+    
+    
+    public String getEstado() {
+    return estado;
+    }
+    
     public EquipoControl(int codigo) {
         this.codigo = codigo;
         this.miembros = new ArrayList<>();
@@ -27,6 +33,7 @@ public class EquipoControl {
         for (Miembro m : miembros) {
             m.setLibre(true);
         }
+        this.estado="libre";
     }
 
     public List<Miembro> getMiembros() {

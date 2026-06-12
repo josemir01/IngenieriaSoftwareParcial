@@ -33,7 +33,6 @@ public class OrdenComposicion {
         this.finalizada = true;
 
         denuncia.getSemaforo().setEstado("Operativo");
-
         if (equipoControl != null) {
             equipoControl.liberarMiembros();
         }
